@@ -28,7 +28,7 @@ jobs:
 
       - name: Build llama.cpp Binary Tools
         run: |
-          git clone --depth=1 https://github.com ggerganov-llama-cpp
+          git clone --depth=1 https://github.com/ggerganov/llama.cpp.git ggerganov-llama-cpp
           cd ggerganov-llama-cpp
           make -j$(nproc)
 
